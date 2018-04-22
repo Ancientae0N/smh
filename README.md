@@ -1,7 +1,6 @@
 Hash Shell
 ==============
-
-Simple and thoroughly commented shell written in C, just for educative purposes. 
+Basic implementation of a shell with C.
 
 
 Features
