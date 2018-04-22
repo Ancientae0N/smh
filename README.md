@@ -1,7 +1,7 @@
 Hash Shell
 ==============
 
-Simple and thoroughly commented shell written in C, just for educative purposes. 
+Simple shell written in C.
 
 
 Features
@@ -16,3 +16,9 @@ Features
 * Background execution of programs with `&`
 * Piping implemented (`<cmd1> | <cmd2>`) via `pipe` and `dup2` syscalls. Multiple piping is allowed.
 * SIGINT signal when Ctrl-C is pressed (shell is not exited)
+* Aliasing implemented, eg: `alias ll ls -l`. Input ll into the shell and get the result of ls -l.
+* 2 new extensions to ls added: 
+->`ls -z` which lists out all the files with a size of 0 bytes 
+->`ls -e` which lists out all the files without an extension!
+* history command which lists out all the commands entered until now. Use `history`
+
