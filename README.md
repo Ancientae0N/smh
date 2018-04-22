@@ -5,8 +5,10 @@ Simple shell written in C.
 
 ### Usage
 ### ------
-`cd Hash`
-`make`
+`cd Hash`,
+
+`make,
+`
 `./Hash`
 
 ### --------
