@@ -3,7 +3,13 @@ Hash Shell
 
 Simple shell written in C.
 
+### Usage
+### ------
+`cd Hash`
+`make`
+`./Hash`
 
+### --------
 Features
 --------
 
@@ -20,5 +26,5 @@ Features
 * 2 new extensions to ls added: 
 ->`ls -z` which lists out all the files with a size of 0 bytes 
 ->`ls -e` which lists out all the files without an extension!
-* history command which lists out all the commands entered until now. Use `history`
+* History command which lists out all the commands entered until now. Use `history`
 
