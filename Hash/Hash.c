@@ -739,6 +739,22 @@ int main(int argc, char *argv[], char ** envp) {
 				numTokens = 1;
 				while((tokens[numTokens] = strtok(NULL, " \n\t")) != NULL) numTokens++;
 			}
+			if(strcmp(tokens[0], "ls") == 0 && strcmp(tokens[1], "*") == 0 && tokens[2][0] == '.'){//wildcard
+				char new[20];
+				strcpy(new, "ls | grep \\");
+				strcat(new, tokens[2]);
+				tokens[0] = strtok(new," \n\t");
+				numTokens = 1;
+				while((tokens[numTokens] = strtok(NULL, " \n\t")) != NULL) numTokens++;
+			}
+			if(strcmp(tokens[0], "ls") == 0 && strcmp(tokens[1], "*") == 0 && tokens[2][0] != '.'){//wildcard
+				char new[20];
+				strcpy(new, "ls | grep ");
+				strcat(new, tokens[2]);
+				tokens[0] = strtok(new," \n\t");
+				numTokens = 1;
+				while((tokens[numTokens] = strtok(NULL, " \n\t")) != NULL) numTokens++;
+			}
 		}
 		if(strcmp(tokens[0], "alias") == 0){
 			char *cont = (char*)malloc(sizeof(char)*20);
