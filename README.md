@@ -30,4 +30,5 @@ Features
 ->`ls -e` which lists out all the files without an extension!
 * History command which lists out all the commands entered until now. Use `history`
 * Editor implemented in the shell. Use `hashit` to get the editor and follow the instructions after.
+* Entering the up-arrow key executes the instruction which was entered previously.
 
