@@ -29,4 +29,5 @@ Features
 ->`ls -z` which lists out all the files with a size of 0 bytes 
 ->`ls -e` which lists out all the files without an extension!
 * History command which lists out all the commands entered until now. Use `history`
+* Editor implemented in the shell. Use `hashit` to get the editor and follow the instructions after.
 
